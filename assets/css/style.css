@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
+}
+
+/* double-check if sans-serif is set correctly as default*/
+body{
+    font-family: 'Indie Flower', cursive, sans-serif;
 }
 
 #header, h2, #rules, h3{
@@ -30,6 +37,18 @@ img{
     height: 200px;
 }
 
+button{
+    cursor: pointer;
+}
+
+#display-choices{
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+#result{
+    font-size: 50px;
+}
 
 #social-media {
     font-size: 70px;
