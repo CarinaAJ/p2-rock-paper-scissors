@@ -7,51 +7,57 @@
 }
 
 /* double-check if sans-serif is set correctly as default*/
-body{
+body {
     font-family: 'Indie Flower', cursive, sans-serif;
+    background-color: #20b2aa
+    ;
 }
 
-#header, h2, #rules, h3{
+#header,
+h2,
+#rules,
+h3 {
     text-align: center;
 }
 
-#header{
+#header {
     font-size: 50px;
     height: 200px;
 }
 
-#rules{
+#rules {
     padding-top: 20px;
 }
 
-h3{
+h3 {
     padding: 20px 0 20px 0;
 }
 
-#game-choices{
+#game-choices {
     display: flex;
     justify-content: space-evenly;
 }
 
-img{
+img {
     height: 200px;
 }
 
-button{
+button {
     cursor: pointer;
+    border-radius: 50%;
 }
 
-#display-choices{
+#display-choices {
     padding-top: 50px;
     font-size: 30px;
 }
 
-#result{
+#result {
     font-size: 50px;
 }
 
 #social-media {
-    font-size: 70px;
+    font-size: 30px;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
