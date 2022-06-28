@@ -21,9 +21,15 @@ h3{
     padding: 20px 0 20px 0;
 }
 
-footer{
-    display: block;
+#game-choices{
+    display: flex;
+    justify-content: space-evenly;
 }
+
+img{
+    height: 200px;
+}
+
 
 #social-media {
     font-size: 70px;
