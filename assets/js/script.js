@@ -19,7 +19,7 @@ function game(userChoice) {
     let userPick = document.getElementById("user-pick");
     userPick.innerHTML = `chose ${userChoice}`;
     let computerChoice = createComputerChoice();
-    computerPickDisplay.innerHTML = `Computer chose ${computerChoice}`;
+    computerPickDisplay.innerHTML = `chose ${computerChoice}`;
     displayResult(userChoice, computerChoice);
 }
 
