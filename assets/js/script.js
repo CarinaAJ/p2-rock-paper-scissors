@@ -26,7 +26,16 @@ function game(userChoice) {
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie";
+    } else if (userChoice === "Rock" && computerChoice === "Scissors") {
+        result.innerHTML = "You win";
+    } else if (userChoice == "Paper" && computerChoice === "Scissors") {
+        result.innerHTML = "You loose";
+    } else if (userChoice === "Scissors" && computerChoice === "Rock") {
+        result.innerHTML = "You loose";
+    } else if (userChoice == "Scissors" && computerChoice == "Paper") {
+        result.innerHTML = "You win";
     }
+
 }
 
 // event listeners for each button
