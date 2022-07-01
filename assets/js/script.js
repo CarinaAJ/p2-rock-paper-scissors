@@ -5,7 +5,7 @@ const scissors = document.getElementById("scissors");
 const rpsOptions = ['Rock', 'Paper', 'Scissors'];
 const result = document.getElementById("result");
 let computerPickDisplay = document.getElementById("computer-pick");
-const choices = document.querySelectorAll("rps-buttons");
+//const choices = document.querySelectorAll("rps-buttons");
 
 // let computer pick at random
 
