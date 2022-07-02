@@ -26,7 +26,7 @@ function game(userChoice) {
 
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
-        result.innerHTML = "It's a tie";
+        result.innerHTML = "It's a tie 😲";
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
         result.innerHTML = "Rock crushes Scissors! You win 😀";
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
