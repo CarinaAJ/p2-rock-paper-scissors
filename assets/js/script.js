@@ -28,17 +28,17 @@ function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie";
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
-        result.innerHTML = "Rock crushes Scissors! You win";
+        result.innerHTML = "Rock crushes Scissors! You win 😀";
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
-        result.innerHTML = "Scissors cuts Paper! You win";
+        result.innerHTML = "Scissors cuts Paper! You win 😀";
     } else if (userChoice === "Paper" && computerChoice === "Rock"){
-        result.innerHTML = "Paper covers Rock! You win";        
+        result.innerHTML = "Paper covers Rock! You win 😀";        
     } else if(userChoice == "Paper" && computerChoice === "Scissors"){
-        result.innerHTML = "Scissors cuts Paper! You loose";
+        result.innerHTML = "Scissors cuts Paper! You loose 🥺";
     } else if (userChoice === "Scissors" && computerChoice === "Rock"){
-        result.innerHTML = "Rock crushes Scissors! You loose";
+        result.innerHTML = "Rock crushes Scissors! You loose 🥺";
     } else {
-        result.innerHTML = "Paper covers Rock! You loose";
+        result.innerHTML = "Paper covers Rock! You loose 🥺";
     }
 }
 
