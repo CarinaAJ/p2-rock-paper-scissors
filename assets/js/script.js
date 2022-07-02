@@ -23,20 +23,26 @@ function game(userChoice) {
     displayResult(userChoice, computerChoice);
 }
 
+
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie";
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
         result.innerHTML = "You win";
-    } else if (userChoice == "Paper" && computerChoice === "Scissors") {
-        result.innerHTML = "You loose";
-    } else if (userChoice === "Scissors" && computerChoice === "Rock") {
-        result.innerHTML = "You loose";
-    } else if (userChoice == "Scissors" && computerChoice == "Paper") {
+    } else if (userChoice === "Scissors" && computerChoice === "Paper") {
         result.innerHTML = "You win";
+    } else if (userChoice === "Paper" && computerChoice === "Rock"){
+        result.innerHTML = "You win";
+    } else if(userChoice == "Paper" && computerChoice === "Scissors"){
+        result.innerHTML = "You loose";
+    } else if (userChoice === "Scissors" && computerChoice === "Rock"){
+        result.innerHTML = "You loose";
+    } else {
+        result.innerHTML = "You loose";
     }
-
 }
+
+
 
 // event listeners for each button
 rock.addEventListener("click", function () {

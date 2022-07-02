@@ -25,12 +25,18 @@ h3 {
     height: 200px;
 }
 
+h2{
+    font-size: 30px;
+}
+
 #rules {
     padding-top: 20px;
+    font-size: 25px;
 }
 
 h3 {
-    padding: 20px 0 20px 0;
+    padding: 40px 0 50px 0;
+    font-size: 30px;
 }
 
 #game-choices {
@@ -49,15 +55,17 @@ button {
 
 #display-choices {
     padding-top: 50px;
-    font-size: 30px;
+    font-size: 50px;
+    text-align: center;
 }
 
 #result {
     font-size: 50px;
+    
 }
 
 #social-media {
-    font-size: 30px;
+    font-size: 100px;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
