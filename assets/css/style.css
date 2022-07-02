@@ -25,13 +25,13 @@ h3 {
     height: 200px;
 }
 
-h2{
-    font-size: 30px;
+#scores{
+    font-size: 70px;
+    text-align: center;
 }
 
-#rules {
-    padding: 50px 0 70px 0;
-    font-size: 25px;
+h2{
+    font-size: 30px;
 }
 
 h3 {
@@ -62,6 +62,11 @@ button {
 #result {
     font-size: 50px;
     
+}
+
+#rules {
+    padding: 50px 0 70px 0;
+    font-size: 25px;
 }
 
 footer{
