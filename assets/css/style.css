@@ -9,8 +9,7 @@
 /* double-check if sans-serif is set correctly as default*/
 body {
     font-family: 'Indie Flower', cursive, sans-serif;
-    background-color: #20b2aa
-    ;
+    background-color: #20b2aa;
 }
 
 #header,
@@ -25,12 +24,12 @@ h3 {
     height: 200px;
 }
 
-#scores{
+#scores {
     font-size: 70px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
@@ -61,7 +60,7 @@ button {
 
 #result {
     font-size: 50px;
-    
+
 }
 
 #rules {
@@ -69,16 +68,89 @@ button {
     font-size: 25px;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
+/* why are my icons purple? */
 #social-media {
     font-size: 50px;
     list-style-type: none;
-/*  user-select: none;*/
+    /*  user-select: none;*/
 }
 
-#social-media li{
+#social-media:hover {
+    color: white;
+    transition-duration: 1s;
+    ;
+}
+
+#social-media li {
     display: inline;
+}
+
+/* media queries */
+
+@media screen and (max-width: 320px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #header{
+        height: 100px;
+    }
+
+    h1 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    #scores{
+        margin-top: 20px;
+    }
+
+    #game-choices {
+        display: block;
+        text-align: center;
+
+    }
+
+    button {
+        margin: 20px 0 20px 0;
+    }
+
+    #display-choices{
+        padding-top: 30px;
+    }
+
+    #result-container{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #result{
+        font-size: 25px;
+        display: block;
+        font-weight: initial;
+        padding-top: 30px;
+    }
+
+    #rules{
+        padding: 20px 0 25px 0;
+    }
+
+    h4{
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    #social-media{
+        font-size: 30px;
+    }
+
 }

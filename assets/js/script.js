@@ -4,7 +4,7 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const rpsOptions = ['Rock', 'Paper', 'Scissors'];
 const result = document.getElementById("result");
-let computerPickDisplay = document.getElementById("computer-pick");
+//let computerPickDisplay = document.getElementById("computer-pick");
 let userScore = 0;
 let computerScore = 0;
 
@@ -18,10 +18,10 @@ function createComputerChoice() {
 
 // run game function
 function game(userChoice) {
-    let userPick = document.getElementById("user-pick");
-    userPick.innerHTML = `chose ${userChoice}`;
+    //let userPick = document.getElementById("user-pick");
+    //userPick.innerHTML = `chose ${userChoice}`;
     let computerChoice = createComputerChoice();
-    computerPickDisplay.innerHTML = `chose ${computerChoice}`;
+    //computerPickDisplay.innerHTML = `chose ${computerChoice}`;
     displayResult(userChoice, computerChoice);
 }
 
@@ -34,16 +34,17 @@ function displayResult(userChoice, computerChoice) {
         result.innerHTML = "Rock crushes Scissors! You win 😀";
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
         result.innerHTML = "Scissors cuts Paper! You win 😀";
-    } else if (userChoice === "Paper" && computerChoice === "Rock"){
-        result.innerHTML = "Paper covers Rock! You win 😀";        
-    } else if(userChoice == "Paper" && computerChoice === "Scissors"){
+    } else if (userChoice === "Paper" && computerChoice === "Rock") {
+        result.innerHTML = "Paper covers Rock! You win 😀";
+    } else if (userChoice == "Paper" && computerChoice === "Scissors") {
         result.innerHTML = "Scissors cuts Paper! You loose 🥺";
-    } else if (userChoice === "Scissors" && computerChoice === "Rock"){
+    } else if (userChoice === "Scissors" && computerChoice === "Rock") {
         result.innerHTML = "Rock crushes Scissors! You loose 🥺";
     } else {
         result.innerHTML = "Paper covers Rock! You loose 🥺";
     }
 }
+
 
 
 // event listeners for each button
