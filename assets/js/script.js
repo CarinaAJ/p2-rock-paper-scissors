@@ -7,8 +7,7 @@ const result = document.getElementById("result");
 let computerPickDisplay = document.getElementById("computer-pick");
 //const choices = document.querySelectorAll("rps-buttons");
 
-// let computer pick at random
-
+// let computer pick random choice
 function createComputerChoice() {
     const randomChoice = Math.floor(Math.random() * 3);
     return rpsOptions[randomChoice];
@@ -23,25 +22,25 @@ function game(userChoice) {
     displayResult(userChoice, computerChoice);
 }
 
+// display result
 
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie";
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
-        result.innerHTML = "You win";
+        result.innerHTML = "Rock crushes Scissors! You win";
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
-        result.innerHTML = "You win";
+        result.innerHTML = "Scissors cuts Paper! You win";
     } else if (userChoice === "Paper" && computerChoice === "Rock"){
-        result.innerHTML = "You win";
+        result.innerHTML = "Paper covers Rock! You win";        
     } else if(userChoice == "Paper" && computerChoice === "Scissors"){
-        result.innerHTML = "You loose";
+        result.innerHTML = "Scissors cuts Paper! You loose";
     } else if (userChoice === "Scissors" && computerChoice === "Rock"){
-        result.innerHTML = "You loose";
+        result.innerHTML = "Rock crushes Scissors! You loose";
     } else {
-        result.innerHTML = "You loose";
+        result.innerHTML = "Paper covers Rock! You loose";
     }
 }
-
 
 
 // event listeners for each button
