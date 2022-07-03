@@ -216,8 +216,6 @@ footer {
     }
 }
 
-
-
 /* media queries min width 375px */
 
 @media screen and (min-width: 375px) {
@@ -229,6 +227,7 @@ footer {
 
     #header {
         height: 180px;
+        line-height: 80px;
     }
 
     h1 {
