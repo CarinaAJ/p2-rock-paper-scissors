@@ -52,7 +52,7 @@ button {
     border-radius: 50%;
 }
 
-#display-choices {
+#result-container {
     padding-top: 50px;
     font-size: 50px;
     text-align: center;

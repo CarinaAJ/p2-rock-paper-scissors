@@ -4,11 +4,11 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const rpsOptions = ['Rock', 'Paper', 'Scissors'];
 const result = document.getElementById("result");
-//let computerPickDisplay = document.getElementById("computer-pick");
+const userScoreDisplay = document.getElementById("user-score");
+const computerScoreDisplay = document.getElementById("computer-score");
 let userScore = 0;
 let computerScore = 0;
 
-//const choices = document.querySelectorAll("rps-buttons");
 
 // let computer pick random choice
 function createComputerChoice() {
@@ -18,10 +18,7 @@ function createComputerChoice() {
 
 // run game function
 function game(userChoice) {
-    //let userPick = document.getElementById("user-pick");
-    //userPick.innerHTML = `chose ${userChoice}`;
     let computerChoice = createComputerChoice();
-    //computerPickDisplay.innerHTML = `chose ${computerChoice}`;
     displayResult(userChoice, computerChoice);
 }
 
@@ -30,22 +27,36 @@ function game(userChoice) {
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie 😲";
+        userScoreDisplay.innerHTML = userScore;
+        userScore++;
+        computerScoreDisplay.innerHTML = computerScore;
+        computerScore++;
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
         result.innerHTML = "Rock crushes Scissors! You win 😀";
+        userScoreDisplay.innerHTML = userScore;
+        userScore++;
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
         result.innerHTML = "Scissors cuts Paper! You win 😀";
+        userScoreDisplay.innerHTML = userScore;
+        userScore++;
     } else if (userChoice === "Paper" && computerChoice === "Rock") {
         result.innerHTML = "Paper covers Rock! You win 😀";
+        userScoreDisplay.innerHTML = userScore;
+        userScore++;
     } else if (userChoice == "Paper" && computerChoice === "Scissors") {
         result.innerHTML = "Scissors cuts Paper! You loose 🥺";
+        computerScoreDisplay.innerHTML = computerScore;
+        computerScore++;
     } else if (userChoice === "Scissors" && computerChoice === "Rock") {
         result.innerHTML = "Rock crushes Scissors! You loose 🥺";
+        computerScoreDisplay.innerHTML = computerScore;
+        computerScore++;
     } else {
         result.innerHTML = "Paper covers Rock! You loose 🥺";
+        computerScoreDisplay.innerHTML = computerScore;
+        computerScore++;
     }
 }
-
-
 
 // event listeners for each button
 rock.addEventListener("click", function () {
