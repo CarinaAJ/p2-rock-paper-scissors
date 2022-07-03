@@ -4,8 +4,6 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const rpsOptions = ['Rock', 'Paper', 'Scissors'];
 const result = document.getElementById("result");
-const userScoreDisplay = document.getElementById("user-score");
-const computerScoreDisplay = document.getElementById("computer-score");
 let userScore = 0;
 let computerScore = 0;
 
@@ -22,39 +20,47 @@ function game(userChoice) {
     displayResult(userChoice, computerChoice);
 }
 
+// set score variables to be called later in function and update result
+
+const updateScore = () => {
+    const userScoreDisplay = document.getElementById("user-score");
+    userScoreDisplay.innerHTML = userScore;
+    const computerScoreDisplay = document.getElementById("computer-score");
+    computerScoreDisplay.innerHTML = computerScore;
+};
+
 // display result
 
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie 😲";
-        userScoreDisplay.innerHTML = userScore;
         userScore++;
-        computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
+        updateScore();
     } else if (userChoice === "Rock" && computerChoice === "Scissors") {
         result.innerHTML = "Rock crushes Scissors! You win 😀";
-        userScoreDisplay.innerHTML = userScore;
         userScore++;
+        updateScore();
     } else if (userChoice === "Scissors" && computerChoice === "Paper") {
         result.innerHTML = "Scissors cuts Paper! You win 😀";
-        userScoreDisplay.innerHTML = userScore;
         userScore++;
+        updateScore();
     } else if (userChoice === "Paper" && computerChoice === "Rock") {
         result.innerHTML = "Paper covers Rock! You win 😀";
-        userScoreDisplay.innerHTML = userScore;
         userScore++;
+        updateScore();
     } else if (userChoice == "Paper" && computerChoice === "Scissors") {
         result.innerHTML = "Scissors cuts Paper! You lose 🥺";
-        computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
+        updateScore();
     } else if (userChoice === "Scissors" && computerChoice === "Rock") {
         result.innerHTML = "Rock crushes Scissors! You lose 🥺";
-        computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
+        updateScore();
     } else {
         result.innerHTML = "Paper covers Rock! You lose 🥺";
-        computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
+        updateScore();
     }
 }
 
