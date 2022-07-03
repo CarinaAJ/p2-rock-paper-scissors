@@ -48,7 +48,7 @@ function displayResult(userChoice, computerChoice) {
         computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
     } else if (userChoice === "Scissors" && computerChoice === "Rock") {
-        result.innerHTML = "Rock crushes Scissors! You oose 🥺";
+        result.innerHTML = "Rock crushes Scissors! You lose 🥺";
         computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
     } else {

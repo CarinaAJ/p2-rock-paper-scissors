@@ -171,7 +171,8 @@ footer {
     }
 
     #header {
-        height: 50px;
+        height: 100px;
+        line-height: 120px;
     }
 
     h1 {
@@ -188,9 +189,30 @@ footer {
         margin: 20px 0 20px 0;
     }
 
+    #result-container {
+        font-size: 30px;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    #result {
+        font-size: 25px;
+        display: block;
+        font-weight: initial;
+        padding-top: 30px;
+    }
+
+    #rules{
+        padding: 20px 0 20px 0;
+    }
+
 
     h4 {
         text-decoration: underline;
+    }
+
+    #social-media{
+        font-size: 25px;
     }
 }
 
