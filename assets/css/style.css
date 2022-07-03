@@ -89,7 +89,7 @@ footer {
     display: inline;
 }
 
-/* media queries max width 320 px */
+/* media queries max width 320px */
 
 @media screen and (max-width: 320px) {
 
@@ -109,6 +109,10 @@ footer {
 
     #scores {
         margin-top: 20px;
+    }
+
+    h3 {
+        padding-top: 20px;
     }
 
     #game-choices {
@@ -156,7 +160,7 @@ footer {
 
 }
 
-/* media queries min width 375 px */
+/* media queries min width 375px */
 
 @media screen and (min-width: 375px) {
 
@@ -183,11 +187,11 @@ footer {
         padding: 20px 0 20px 0;
     }
 
-    button{
+    button {
         margin: 20px 0 20px 0;
     }
 
-    #result-container{
+    #result-container {
         padding-top: 30px;
     }
 
@@ -214,4 +218,35 @@ footer {
         font-size: 30px;
     }
 
+}
+
+/* media queries min width 768px */
+
+@media screen and (min-width: 768px) {
+
+    #header {
+        height: 180px;
+        line-height: 150px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    #game-choices {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #rules {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    #social-media{
+        font-size: 35px;
+    }
 }
