@@ -89,7 +89,7 @@ footer {
     display: inline;
 }
 
-/* media queries */
+/* media queries max width 320 px */
 
 @media screen and (max-width: 320px) {
 
@@ -98,7 +98,7 @@ footer {
         overflow-x: hidden;
     }
 
-    #header{
+    #header {
         height: 100px;
     }
 
@@ -107,7 +107,7 @@ footer {
         font-size: 40px;
     }
 
-    #scores{
+    #scores {
         margin-top: 20px;
     }
 
@@ -121,35 +121,96 @@ footer {
         margin: 20px 0 20px 0;
     }
 
-    #display-choices{
+    #display-choices {
         padding-top: 30px;
     }
 
-    #result-container{
+    #result-container {
         font-size: 30px;
+        padding-top: 20px;
         font-weight: bold;
     }
 
-    #result{
+    #result {
         font-size: 25px;
         display: block;
         font-weight: initial;
         padding-top: 30px;
     }
 
-    #rules{
+    #rules {
         padding: 20px 0 25px 0;
     }
 
-    h4{
+    h4 {
         text-decoration: underline;
     }
 
-    p{
+    p {
         font-size: 20px;
     }
 
-    #social-media{
+    #social-media {
+        font-size: 30px;
+    }
+
+}
+
+/* media queries min width 375 px */
+
+@media screen and (min-width: 375px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #header {
+        height: 180px;
+    }
+
+    h1 {
+        padding-top: 20px;
+        font-size: 50px;
+    }
+
+    #game-choices {
+        display: block;
+        text-align: center;
+    }
+
+    h3 {
+        padding: 20px 0 20px 0;
+    }
+
+    button{
+        margin: 20px 0 20px 0;
+    }
+
+    #result-container{
+        padding-top: 30px;
+    }
+
+    #result {
+        font-size: 30px;
+        display: block;
+        font-weight: initial;
+        padding-top: 25px;
+    }
+
+    #rules {
+        padding: 20px 0 25px 0;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #social-media {
         font-size: 30px;
     }
 
