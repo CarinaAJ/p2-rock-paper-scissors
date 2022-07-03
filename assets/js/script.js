@@ -44,15 +44,15 @@ function displayResult(userChoice, computerChoice) {
         userScoreDisplay.innerHTML = userScore;
         userScore++;
     } else if (userChoice == "Paper" && computerChoice === "Scissors") {
-        result.innerHTML = "Scissors cuts Paper! You loose 🥺";
+        result.innerHTML = "Scissors cuts Paper! You lose 🥺";
         computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
     } else if (userChoice === "Scissors" && computerChoice === "Rock") {
-        result.innerHTML = "Rock crushes Scissors! You loose 🥺";
+        result.innerHTML = "Rock crushes Scissors! You oose 🥺";
         computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
     } else {
-        result.innerHTML = "Paper covers Rock! You loose 🥺";
+        result.innerHTML = "Paper covers Rock! You lose 🥺";
         computerScoreDisplay.innerHTML = computerScore;
         computerScore++;
     }

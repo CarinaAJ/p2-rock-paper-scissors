@@ -45,6 +45,7 @@ h3 {
 
 img {
     height: 200px;
+    width: 200px;
 }
 
 button {
@@ -160,6 +161,41 @@ footer {
 
 }
 
+/* media queries min width 321px */
+
+@media screen and (min-width: 321px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #game-choices {
+        display: block;
+        text-align: center;
+
+    }
+
+    button {
+        margin: 20px 0 20px 0;
+    }
+
+
+    h4 {
+        text-decoration: underline;
+    }
+}
+
+
+
 /* media queries min width 375px */
 
 @media screen and (min-width: 375px) {
@@ -229,7 +265,7 @@ footer {
         line-height: 150px;
     }
 
-    h1{
+    h1 {
         font-size: 70px;
     }
 
@@ -246,7 +282,7 @@ footer {
         font-size: 25px;
     }
 
-    #social-media{
+    #social-media {
         font-size: 35px;
     }
 }
