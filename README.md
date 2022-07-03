@@ -1,108 +1,155 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors
 
-Welcome CarinaAJ,
+![Am I responsive image](readme-assets/am-i-responsive.jpg)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<hr>
+<hr>
+<hr>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+With this site, I want to give users the opportunity to play the world-famous game ‘Rock, Paper, Scissors’ and displaying the score result. The live site can be found [here](https://carinaaj.github.io/p2-rock-paper-scissors/).
 
-## Gitpod Reminders
+# Table of contents
+- [Design](#design)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+        - [Landing Page](#landing-page)
+        - [Footer](#footer)
+- [Testing](#testing)
+- [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Design
 
-`python3 -m http.server`
+**Text & Background color**
 
-A blue button should appear to click: _Make Public_,
+To give my white Rock, Paper, Scissors buttons with their white circles a nice contrast, I decided to go with a teal colour. The text color is black and it works well together with teal. It has been checked with a Contrast Checker (see testing section).
 
-Another blue button should appear to click: _Open Browser_.
+![Background color](readme-assets/background-color.jpg)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+# Features
 
-Another blue button should appear to click: _Open Browser_.
+## Existing Features:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Landing Page
 
-To log into the Heroku toolbelt CLI:
+Each page consists of a different hero banner to show the variety of the Aurora and keep the interest of the user rather than using the same image across all pages. In addition it should also intrigue the user to learn more about it and to go through all three pages. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Footer
 
-------
+The footer section features links to both of my social media sites (Github and LinkedIn) and upon clicking, a new tab will open.
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Social Media Links](readme-assets/social-links.jpg)
 
 ---
 
-Happy coding!
+## Future Features
+
+- To determine a winner after a set amount of rounds played
+- Expand to Rock, Paper, Scissors, Lizard, Spock
+
+# Testing
+
+The site has been tested by friends and family on a variety of mobile devices as well as different web browsers (Chrome, Firefox, Safari) and all links, videos, audio and the contact form functioned as it should. All input fields of the contact form function correctly, and require the requested input fields before submitting. 
+
+I personally tested the site extensively with dev tools to ensure the site works responsively not only on mobile devices but also on medium to larger screens.
+
+After deciding to use hero banners across all pages I struggled to figure out how to even get started with this task. So I looked again for guidance on the Love Running banner and the properties. I then knew that I should either find or edit an image to roughly a width of 2000px and a size of under 200kb. The programs used are mentioned in the credits.
+
+One of the biggest problems I encountered from the beginning was aligning my logo together with the navigation menu. I initally looked at the Love Running site for guidance but despite applying the same code structue it didn't work for my site. After checking with the Slack community and my Mentor I started looking into flexbox as it seems to be the easiest solution. I knew I could have used this across other parts for the website but because I was running out of time I looked only at the basics to make it work for my purposes. 
+
+So after applying display:flex to my logo and the navigation bar and giving my logo an appropriate line-height it finally ligned up.
+
+Applying media queries however has been the biggest challenge during this project. 
+
+The first issue I faced was after applying the first rules to my media queries and I didn't notice that on smaller devices was a horizontal scrollbar. All styles I applied before had to be checked again after this discovery. But before this I had to find out how to eliminate the scrollbar in the first place. The website which provided me with the solution has been credited in the credits section.
+
+Another big challenge was to center the Youtube videos and Sound Cloud audio. This took a lot of trial and error. Depending on the device the solution was either changing the width or adjusting the margin.
+
+## Validator Testing
+
+**HTML**
+
+No errors were returned when passing through the official W3C validator
+
+![W3C Validator](readme-assets/w3c-validator.jpg)
+
+**CSS**
+
+No errors were found when passing through the official (Jigsaw) validator
+
+![W3C CSS Validator](readme-assets/w3c-css-validator.jpg)
+
+**Lighthouse**
+
+The page achieved great performance on mobile and desktop
+
+Mobile:
+
+![Lighthouse mobile report](readme-assets/lighthouse-mobile-report.jpg)
+
+Desktop:
+
+![Lighthouse desktop report](readme-assets/lighthouse-desktop-report.jpg)
+
+
+### Unfixed Bugs
+
+I noticed that on larger screens (1800px and up) when zooming out (90%) that my second hero banner does not stretch through the entirety on the screen anymore. This is due to the fact that the width of the image is only 1950px. For the main and contact section I used images with over 2000px in width. It took me a long time to find a suitable banner and adjust it for my purposes so I decided to leave it for now as it is a very specific scenario but plan to address it in the future.
+
+I would have liked to implement a 'back to top' button as the site contains a lot of text. During my research it seemed that I could have worked around it with the 'a' tag, and the best solution seems to be javascript which is outside this first module. So I decided to leave it out completely.
+
+### Libraries & Programs used:
+
+- Github, to store my repository
+- Gitpod, to create my html and css files
+- Google Fonts, for my font family 'Indie Flower'
+- Font Awesome, for my social media icons 
+- Balsamiq, to create my wireframe
+- Am I Responsive?
+- Dev Tools, to ensure the site looked good across different devices
+
+
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+In the GitHub repository, navigate to the Settings tab. On the left-hand side under ‘Code and automation’, select ‘Pages’ and from the source section drop-down menu, select the Master Branch. Once the master branch has been selected, the page will be automatically refresh with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - 
+https://carinaaj.github.io/p2-rock-paper-scissors/
+
+# Credits
+
+
+
+
+
+**For JavaScript issues I encountered these sites have been used for reference:**
+
+
+- For general information [W3 Schools ](https://www.w3schools.com/) and [Developer Mozilla](https://developer.mozilla.org/en-US/)
+- For guidance I looked at these tutorials on Youtube
+- (https://www.youtube.com/watch?v=Qqy8Ov3NWvQ_
+- (https://www.youtube.com/watch?v=RwFeg0cEZvQ)
+- (https://www.youtube.com/watch?v=qWPtKtYEsN4)
+- To assist me with setting the score code has been adapted from (https://www.youtube.com/watch?v=qWPtKtYEsN4)
+- For eventListener clarification [Freecodecamp](https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/)
+
+
+
+
+** Additional sites:**
+
+-[HTML Color codes](https://html-color.codes/css/lightseagreen) for my teal background
+-[Unicode](https://unicode.org/emoji/charts/full-emoji-list.html#smileys_&_emotion) for my emojis when displaying the result 
+
+
+### Media
+
+All images for my Rock, Paper, Scissor buttons have been taken from banners have been taken from https://icon-library.com/
+
+Lastly, I wanted to thank my fiancé, Dave Browning, for being an amazing Rubber Duck when I needed one❤️ 
+
+
+
