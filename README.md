@@ -50,21 +50,24 @@ The footer section features links to both of my social media sites (Github and L
 
 # Testing
 
-The site has been tested by friends and family on a variety of mobile devices as well as different web browsers (Chrome, Firefox, Safari) and all links, videos, audio and the contact form functioned as it should. All input fields of the contact form function correctly, and require the requested input fields before submitting. 
+The site has been tested by friends and family on a variety of mobile devices as well as different web browsers (Chrome, Firefox, Safari), and the game works on all devices. It shows the correct outcome of the game and correctly displays the score to the user.
 
-I personally tested the site extensively with dev tools to ensure the site works responsively not only on mobile devices but also on medium to larger screens.
+I faced many challenges during the creation of this project. Whilst I knew which functions I would need (logically), I struggled a lot with how to actually write them out. 
 
-After deciding to use hero banners across all pages I struggled to figure out how to even get started with this task. So I looked again for guidance on the Love Running banner and the properties. I then knew that I should either find or edit an image to roughly a width of 2000px and a size of under 200kb. The programs used are mentioned in the credits.
+After I set my variables#, the first hurdle I had to overcome was how to set the user and computer score and use it later to compare them with each other and display the result.
 
-One of the biggest problems I encountered from the beginning was aligning my logo together with the navigation menu. I initally looked at the Love Running site for guidance but despite applying the same code structue it didn't work for my site. After checking with the Slack community and my Mentor I started looking into flexbox as it seems to be the easiest solution. I knew I could have used this across other parts for the website but because I was running out of time I looked only at the basics to make it work for my purposes. 
+Initially, I wanted to do all of this one function, but after a friend pointed out this might not be the most efficient way, I found a simple but effective solution. So I created a separate game function to take the user’s choice as a parameter whilst also nesting the computer’s choice function inside of it (which has been created separately) and adding my displayResult function in it (which takes both the user’s and computer’s choice as a parameter). 
 
-So after applying display:flex to my logo and the navigation bar and giving my logo an appropriate line-height it finally ligned up.
+This allowed me to then compare both results and display the result on the screen.
 
-Applying media queries however has been the biggest challenge during this project. 
+Another big challenge I faced was updating the scores for both parties. At first, I thought it might be an easy fix and simply create two variables for each and assign the value 0 and update it in my displayResult function after the outcome. Unfortunately, it wasn’t as easy as that. 
 
-The first issue I faced was after applying the first rules to my media queries and I didn't notice that on smaller devices was a horizontal scrollbar. All styles I applied before had to be checked again after this discovery. But before this I had to find out how to eliminate the scrollbar in the first place. The website which provided me with the solution has been credited in the credits section.
+I then tried the innerHTML property to increment the score with this. However, that also failed as the score still didn’t update. In the end, I found guidance on a YouTube video (credited accordingly in my Credit section), and I was able to make it work. It seemed that my initial approach wasn’t too far off, but I had to create another function separately and still get the innerHTML but setting it either to the user or computer score. So in my displayResult function, I then only had to set incrementing the score where applicable and call the function after incrementing it. 
 
-Another big challenge was to center the Youtube videos and Sound Cloud audio. This took a lot of trial and error. Depending on the device the solution was either changing the width or adjusting the margin.
+Due to my prior project, I managed for my HTML and CSS to behave the way I wanted them to, and even the media queries (which has been the biggest challenge in my first project) were a breeze this time. Although I had a slight issue because I haven’t been able to see my social media icons one day, and after pullinig my hair out for the good part of half an hour, I noticed they didn’t show because of an Ad Blocker I installed the previous day... Lesson learned :) 
+
+Note: This game has been written with Javascript knowledge I possess at this moment in time. I am, however, aware that there might be more ‘elegant’ and better ways/functions I could use, so I'm planning on revisiting this at a later stage when I have a better and more in-depth grasp of the subject.
+
 
 ## Validator Testing
 
@@ -120,9 +123,6 @@ The live link can be found here -
 https://carinaaj.github.io/p2-rock-paper-scissors/
 
 # Credits
-
-
-
 
 
 **For JavaScript issues I encountered these sites have been used for reference:**
