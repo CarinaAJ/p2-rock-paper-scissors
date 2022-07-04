@@ -9,6 +9,7 @@
 With this site, I want to give users the opportunity to play the world-famous game ‘Rock, Paper, Scissors’ and display the score result. The live site can be found [here](https://carinaaj.github.io/p2-rock-paper-scissors/).
 
 # Table of contents
+- [Wireframes](#wireframes)
 - [Design](#design)
 - [Features](#features)
     - [Existing Features](#existing-features)
@@ -16,6 +17,13 @@ With this site, I want to give users the opportunity to play the world-famous ga
         - [Footer](#footer)
 - [Testing](#testing)
 - [Credits](#credits)
+
+
+# Wireframes
+
+![Desktop Version](readme-assets/wireframe-1.jpg)
+![Tables Version](readme-assets/wireframe-2.jpg)
+![Phone Version](readme-assets/wireframe-3.jpg)
 
 # Design
 
