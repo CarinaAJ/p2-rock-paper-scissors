@@ -72,11 +72,14 @@ footer {
     text-align: center;
 }
 
-/* why are my icons purple? */
 #social-media {
     font-size: 50px;
     list-style-type: none;
 
+}
+
+#social-media a:visited {
+    color: black;
 }
 
 #social-media:hover {

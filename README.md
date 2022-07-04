@@ -71,6 +71,12 @@ Note: This game has been written with Javascript knowledge I possess at this mom
 
 ## Validator Testing
 
+**JS**
+
+No issues were found through JS Hint
+
+![JS Hint](readme-assets/jshint-validator.jpg)
+
 **HTML**
 
 No errors were returned when passing through the official W3C validator

@@ -1,4 +1,4 @@
-// DOM 
+// DOM variables
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
@@ -21,7 +21,6 @@ function game(userChoice) {
 }
 
 // set score variables to be called later in function and update result
-
 const updateScore = () => {
     const userScoreDisplay = document.getElementById("user-score");
     userScoreDisplay.innerHTML = userScore;
@@ -30,7 +29,6 @@ const updateScore = () => {
 };
 
 // display result
-
 function displayResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie 😲";
