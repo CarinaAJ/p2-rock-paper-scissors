@@ -89,6 +89,12 @@ No errors were found when passing through the official (Jigsaw) validator
 
 ![W3C CSS Validator](readme-assets/w3c-css-validator.jpg)
 
+**Contrast Checker**
+
+The site achieved a pass when running through the contrast checker
+
+![Web Aim](readme-assets/contrast-checker.jpg)
+
 **Lighthouse**
 
 The page achieved great performance on mobile and desktop
