@@ -61,7 +61,7 @@ Below the result display are the rules.
 
 The footer section features links to both of my social media sites (Github and LinkedIn) and upon clicking, a new tab will open. As this site doesn't contain a lot of content I decided to center these icons. In order to stay consistent with the colors I also removed the visited color (purple) after the user clicked those and changed it to black. Given it's a simple site I felt it was more aesthetic.
 
-![Social Media Links](readme-assets/social-links.jpg)
+![Social Media Links](readme-assets/footer.jpg)
 
 ---
 
