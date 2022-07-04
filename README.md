@@ -6,7 +6,7 @@
 <hr>
 <hr>
 
-With this site, I want to give users the opportunity to play the world-famous game ‘Rock, Paper, Scissors’ and displaying the score result. The live site can be found [here](https://carinaaj.github.io/p2-rock-paper-scissors/).
+With this site, I want to give users the opportunity to play the world-famous game ‘Rock, Paper, Scissors’ and display the score result. The live site can be found [here](https://carinaaj.github.io/p2-rock-paper-scissors/).
 
 # Table of contents
 - [Design](#design)
@@ -21,7 +21,7 @@ With this site, I want to give users the opportunity to play the world-famous ga
 
 **Text & Background color**
 
-To give my white Rock, Paper, Scissors buttons with their white circles a nice contrast, I decided to go with a teal colour. The text color is black and it works well together with teal. It has been checked with a Contrast Checker (see testing section).
+To give my white Rock, Paper, Scissors buttons with their white circles a nice contrast, I decided to go with a teal colour. The text color is black, and it works well together with teal. It has been checked with a Contrast Checker (see testing section).
 
 ![Background color](readme-assets/background-color.jpg)
 
@@ -32,12 +32,26 @@ To give my white Rock, Paper, Scissors buttons with their white circles a nice c
 
 ### Landing Page
 
-Each page consists of a different hero banner to show the variety of the Aurora and keep the interest of the user rather than using the same image across all pages. In addition it should also intrigue the user to learn more about it and to go through all three pages. 
+The landing page shows the user immediately what it is about and gives clear instructions on how to play the game. As I wanted it to be a colorful version, which could also be played by kids, I decided to go with a teal background, a playful font and turned the buttons into comic-style images. To indicate that the images need to be clicked upon, I changed the hover property to a hand.
+
+![Landing Page](readme-assets/rps-landing-page.jpg)
+
+When starting the game the score above the buttons will be updated accordingly and the result will be displayed in text form below the buttons together with a happy, sad emoji and surprised emoji (depending on the outcome).
+
+![After initialization](readme-assets/rps-after-initialization.jpg)
+
+![Tie](readme-assets/rps-tie.jpg)
+![User Win](readme-assets/rps-user-win.jpg) 
+![User lose](readme-assets/rps-user-lose.jpg)
+
+Below the result display are the rules.
+
+![RPS Rules](readme-assets/rps-rules.jpg)
 
 
 ### Footer
 
-The footer section features links to both of my social media sites (Github and LinkedIn) and upon clicking, a new tab will open.
+The footer section features links to both of my social media sites (Github and LinkedIn) and upon clicking, a new tab will open. As this site doesn't contain a lot of content I decided to center these icons. In order to stay consistent with the colors I also removed the visited color (purple) after the user clicked those and changed it to black. Given it's a simple site I felt it was more aesthetic.
 
 ![Social Media Links](readme-assets/social-links.jpg)
 
@@ -46,6 +60,7 @@ The footer section features links to both of my social media sites (Github and L
 ## Future Features
 
 - To determine a winner after a set amount of rounds played
+- To implement a reset button
 - Expand to Rock, Paper, Scissors, Lizard, Spock
 
 # Testing
@@ -64,7 +79,7 @@ Another big challenge I faced was updating the scores for both parties. At first
 
 I then tried the innerHTML property to increment the score with this. However, that also failed as the score still didn’t update. In the end, I found guidance on a YouTube video (credited accordingly in my Credit section), and I was able to make it work. It seemed that my initial approach wasn’t too far off, but I had to create another function separately and still get the innerHTML but setting it either to the user or computer score. So in my displayResult function, I then only had to set incrementing the score where applicable and call the function after incrementing it. 
 
-Due to my prior project, I managed for my HTML and CSS to behave the way I wanted them to, and even the media queries (which has been the biggest challenge in my first project) were a breeze this time. Although I had a slight issue because I haven’t been able to see my social media icons one day, and after pullinig my hair out for the good part of half an hour, I noticed they didn’t show because of an Ad Blocker I installed the previous day... Lesson learned :) 
+Due to my prior project, I managed for my HTML and CSS to behave the way I wanted them to, and even the media queries (which had been the biggest challenge in my first project) were a breeze this time. Although I had a slight issue because I haven’t been able to see my social media icons one day, and after pulling my hair out for the good part of half an hour, I noticed they didn’t show because of an Ad Blocker I installed the previous day... Lesson learned :) 
 
 Note: This game has been written with Javascript knowledge I possess at this moment in time. I am, however, aware that there might be more ‘elegant’ and better ways/functions I could use, so I'm planning on revisiting this at a later stage when I have a better and more in-depth grasp of the subject.
 
@@ -110,9 +125,7 @@ Desktop:
 
 ### Unfixed Bugs
 
-I noticed that on larger screens (1800px and up) when zooming out (90%) that my second hero banner does not stretch through the entirety on the screen anymore. This is due to the fact that the width of the image is only 1950px. For the main and contact section I used images with over 2000px in width. It took me a long time to find a suitable banner and adjust it for my purposes so I decided to leave it for now as it is a very specific scenario but plan to address it in the future.
-
-I would have liked to implement a 'back to top' button as the site contains a lot of text. During my research it seemed that I could have worked around it with the 'a' tag, and the best solution seems to be javascript which is outside this first module. So I decided to leave it out completely.
+No unfixed bugs have been found.
 
 ### Libraries & Programs used:
 
@@ -123,7 +136,6 @@ I would have liked to implement a 'back to top' button as the site contains a lo
 - Balsamiq, to create my wireframe
 - Am I Responsive?
 - Dev Tools, to ensure the site looked good across different devices
-
 
 
 ## Deployment
@@ -148,8 +160,9 @@ https://carinaaj.github.io/p2-rock-paper-scissors/
 - To assist me with setting the score code has been adapted from (https://www.youtube.com/watch?v=qWPtKtYEsN4)
 - For eventListener clarification [Freecodecamp](https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/)
 
+### Media
 
-
+All images for my Rock, Paper, Scissor buttons have been taken from banners have been taken from https://icon-library.com/
 
 ** Additional sites:**
 
@@ -157,11 +170,13 @@ https://carinaaj.github.io/p2-rock-paper-scissors/
 -[Unicode](https://unicode.org/emoji/charts/full-emoji-list.html#smileys_&_emotion) for my emojis when displaying the result 
 
 
-### Media
+<hr><hr>
 
-All images for my Rock, Paper, Scissor buttons have been taken from banners have been taken from https://icon-library.com/
+I also want to thank a few people who were great support during the creation of this project: my friend [Jessica](https://www.linkedin.com/in/jessica-mowatt-4627a661/), who helped me and nudged me in the right direction when needed, my friend [Jamie](https://www.linkedin.com/in/jamie-king-25938123/), who was there for me during those long hours and whose virtual company kept me sane. 😃
 
-Lastly, I wanted to thank my fiancé, Dave Browning, for being an amazing Rubber Duck when I needed one❤️ 
+And of course, my mentor [Martina](https://www.linkedin.com/in/martinaterlevic/). I couldn't have asked for a better (and cooler 😎) mentor to have on my side.
+
+Lastly, I wanted to thank my fiancé, Dave Browning, for being an amazing Rubber Duck when I needed one despite being completely unfamiliar with any of this, and who still thinks it's all magic and I'm a wizard. ❤️ 
 
 
 
